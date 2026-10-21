@@ -1,4 +1,4 @@
-# RepoX-Ray — See how any codebase works
+# RepoX-Ray - See how any codebase works
 
 RepoX-Ray is a portfolio-ready MVP that uploads a ZIP of a repository and builds an interactive map of files, functions, classes, API endpoints, imports, and detected calls.
 
@@ -25,14 +25,14 @@ RepoX-Ray is a portfolio-ready MVP that uploads a ZIP of a repository and builds
 Windows PowerShell:
 
 BACKEND EXECUTION:
-py -0p
-where.exe python
-py -3.12 -m venv backend\.venv
-backend\.venv\Scripts\activate
-python -m pip install --upgrade pip
-python -m pip install -r backend\requirements.txt
-cd backend
-python -m uvicorn main:app --reload --port 8000
+-py -0p
+-where.exe python
+-py -3.12 -m venv backend\.venv
+-backend\.venv\Scripts\activate
+-python -m pip install --upgrade pip
+-python -m pip install -r backend\requirements.txt
+-cd backend
+-python -m uvicorn main:app --reload --port 8000
 
 
 API docs: http://localhost:8000/docs
