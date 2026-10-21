@@ -23,7 +23,7 @@ import {
   Zap
 } from 'lucide-react';
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API = import.meta.env.VITE_API_URL || 'https://repox-ray.onrender.com/';
 
 const sample = {
   summary: { files: 6, functions: 9, classes: 2, endpoints: 2, edges: 15 },
