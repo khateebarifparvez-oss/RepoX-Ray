@@ -26,7 +26,7 @@ Windows PowerShell:
 
 BACKEND EXECUTION:
 
-```
+```bash
 py -0p
 where.exe python
 py -3.12 -m venv backend\.venv
