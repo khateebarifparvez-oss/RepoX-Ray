@@ -27,7 +27,6 @@ Windows PowerShell:
 BACKEND EXECUTION:
 py -0p
 where.exe python
-cd C:\Users\khate\Downloads\RepoX-Ray
 py -3.12 -m venv backend\.venv
 backend\.venv\Scripts\activate
 python -m pip install --upgrade pip
