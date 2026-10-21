@@ -6,12 +6,22 @@ import os
 import zipfile
 from pathlib import PurePosixPath
 from typing import Any
-
+from fastapi.middleware.cors import CORSMiddleware
 import networkx as nx
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="RepoX-Ray API", version="1.0.0")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://repo-x-ray-tau.vercel.app",
+        "http://localhost:5173",
+    ],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Set FRONTEND_ORIGIN in production, e.g. https://your-app.vercel.app
 origins = os.getenv("FRONTEND_ORIGIN", "http://localhost:5173").split(",")
