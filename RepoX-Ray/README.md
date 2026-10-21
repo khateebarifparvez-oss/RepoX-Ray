@@ -1,4 +1,4 @@
-# RepoX-Ray — See how any codebase works
+# RepoX-Ray - See how any codebase works
 
 RepoX-Ray is a portfolio-ready MVP that uploads a ZIP of a repository and builds an interactive map of files, functions, classes, API endpoints, imports, and detected calls.
 
