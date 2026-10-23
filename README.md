@@ -53,25 +53,6 @@ Open the URL Vite prints, normally http://localhost:5173.
 
 In GitHub, choose **Code → Download ZIP**, then in RepoX-Ray click **Analyze repository** and select the ZIP. The demo graph appears initially so you can explore the interface before uploading a project.
 
-## Deploy
-
-### Backend: Render
-
-1. Push this folder to a GitHub repository.
-2. In Render, create **New → Web Service** and connect the repository.
-3. Set **Root Directory** to `backend`.
-4. Build command: `pip install -r requirements.txt`
-5. Start command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-6. Deploy. Copy the service URL, e.g. `https://repox-ray-api.onrender.com`.
-
-### Frontend: Vercel
-
-1. Import the same GitHub repository in Vercel.
-2. Set **Root Directory** to `frontend`.
-3. Set environment variable `VITE_API_URL` to the Render backend URL (no trailing slash), e.g. `https://repox-ray-api.onrender.com`.
-4. Deploy.
-5. In Render, set `FRONTEND_ORIGIN` to the deployed Vercel origin, e.g. `https://repox-ray.vercel.app`. If you use a custom domain, include that origin too, comma-separated.
-6. Redeploy the backend after setting the environment variable.
 
 ## Important limitations
 
